@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HR5 Automação</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Canvas de partículas no fundo -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- HEADER fixo e transparente (mantido) -->
+  <header class="header header-hero">
+    <div class="container">
+      <!-- Espaço para a logo -->
+      <a class="logo" href="#home" aria-label="HR5 Automação - Início">
+        <img src="./assets/Imagem_do_WhatsApp_de_2025-09-15_à_s__12.59.33_7b99fc51-removebg-preview.png" alt="Logo HR5 Automação">
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- Menu mobile -->
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO (mantido) -->
+  <section id="home" class="hero-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>HR5 Automação</h1>
+        <p>Excelência em engenharia elétrica, automação industrial e fabricação de máquinas.</p>
+        <a href="#contato" class="btn-cta">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- SOBRE -->
+    <section id="sobre" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Sobre nós</h2>
+          <p>História e propósito</p>
+        </div>
+        <div class="content-grid">
+          <div class="panel">
+            <h3>Nossa história</h3>
+            <p>
+              Fundada em 2015, a HR5 Automação iniciou suas atividades com foco em projetos de engenharia, instalações elétricas, automação e instrumentação para indústrias químicas e de manufatura. Em 2017, expandiu seu portfólio para a fabricação de máquinas e equipamentos, atendendo a diversas áreas industriais. Hoje, conta com uma equipe especializada em engenharia mecânica, elétrica e automação industrial, sempre atenta às novas tecnologias.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Missão</h3>
+            <ul class="bullet">
+              <li>Desenvolver soluções integradas em sistemas elétricos e de automação.</li>
+              <li>Promover inovação tecnológica e eficiência energética.</li>
+              <li>Garantir segurança e confiabilidade.</li>
+              <li>Atender às necessidades específicas de cada cliente.</li>
+            </ul>
+            <h3>Valores</h3>
+            <ul class="bullet">
+              <li>Excelência técnica e inovação contínua.</li>
+              <li>Compromisso com o cliente e ética profissional.</li>
+              <li>Sustentabilidade e responsabilidade social.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Áreas de atuação</h2>
+          <p>Do projeto à operação</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <img src="./assets/imagem hiper-realist.png" alt="Projetos Elétricos e Automação">
+            <div class="card-body">
+              <h3>Projetos elétricos e automação</h3>
+              <p>Do levantamento inicial ao comissionamento: projeto conceitual e executivo, montagem, programação e treinamento.</p>
+              <ul class="badge-list">
+                <li>PLC | SCADA | IHM</li>
+                <li>Painéis elétricos</li>
+                <li>Comissionamento</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="./assets/imagem hiper-realistAW.png" alt="Manutenção Industrial">
+            <div class="card-body">
+              <h3>Manutenção industrial</h3>
+              <p>Serviços preventivos e corretivos em sistemas elétricos, automação, instrumentação e robótica.</p>
+              <ul class="badge-list">
+                <li>Preventiva</li>
+                <li>Corretiva</li>
+                <li>Instrumentação</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="./assets/imagem hiper-realistaz.png" alt="Fabricação de Máquinas">
+            <div class="card-body">
+              <h3>Fabricação de máquinas</h3>
+              <p>Projetos e fabricação de máquinas de processamento, hot stamping, corte de tecido e retrofit de equipamentos.</p>
+              <ul class="badge-list">
+                <li>Projeto mecânico</li>
+                <li>Automação</li>
+                <li>Retrofit</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Principais trabalhos</h2>
+          <p>Alguns destaques recentes</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="./assets/imagem hiper-realistAQ.png" alt="Instalações Elétricas Ambientais">
+            <figcaption>Instalações elétricas ambientais</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/imagem ultra realist.png" alt="Automação de Cápsula de Flutuação">
+            <figcaption>Automação de cápsula de flutuação</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="./assets/imagem ultra realistA.png" alt="Retrofit de Máquinas">
+            <figcaption>Retrofit de máquinas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Entre em contato</h2>
+          <p>Vamos construir sua melhor solução</p>
+        </div>
+
+        <div class="contato-container">
+          <!-- Coluna info -->
+          <div class="contato-info panel">
+            <h3>Fale com a HR5</h3>
+            <p><i class="fas fa-phone"></i> (71) 99158-2792 <strong>Alcino</strong></p>
+            <p><i class="fas fa-phone"></i> (71) 98187-2240 <strong>Hudson</strong></p>
+            <p><i class="fas fa-envelope"></i> hr5automacao@gmail.com</p>
+            <p><i class="fas fa-location-dot"></i> Lauro de Freitas - BA, Brasil</p>
+            <div class="note">
+              <i class="fas fa-circle-info"></i>
+              Atendemos projetos completos: estudo, projeto, fabricação e comissionamento.
+            </div>
+          </div>
+
+        
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 HR5 Automação — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
